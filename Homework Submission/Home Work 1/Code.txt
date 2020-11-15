@@ -1,0 +1,48 @@
+CREATE TABLE Departments(
+    DEPARTMENT_ID int(4) NOT NULL PRIMARY KEY,
+    DEPARTMENT_NAME VARCHAR(30) NOT NULL,
+    MANAGER_ID int(6),
+    LOCATION_ID int(4));
+    
+CREATE TABLE Locations(
+    Location_id int(4) NOT NULL PRIMARY KEY,
+    Street_Address VARCHAR(40),
+    Postal_Code VARCHAR(12),
+    City VARCHAR(30)NOT NULL,
+    State_Province VARCHAR(25),
+    Country_ID VARCHAR(2));
+
+    
+ CREATE TABLE Employees(
+     Employee_Id int(6)NOT NULL PRIMARY KEY,
+     First_Name VARCHAR(20),
+     Last_Name VARCHAR(25) NOT NULL,
+     Email VARCHAR(25) NOT NULL,
+     Phone_Number VARCHAR(15),
+     Hire_Date date NOT NULL,
+     Job_Id VARCHAR(10)NOT NULL,
+     Salary int(8),
+     Commission_pct int(2),
+     Manager_Id int(6),
+     Department_Id int(4))
+
+
+INSERT INTO departments VALUES (10,'Administration',200,1700);
+INSERT INTO departments VALUES (20,'Marketing',201,1800);
+INSERT INTO departments VALUES (50,'Shipping',124,1500);
+INSERT INTO departments VALUES (60,'IT',103,1400);
+INSERT INTO departments VALUES (80,'Sales',149,2500);
+INSERT INTO departments VALUES (90,'Executive',100,1700);
+INSERT INTO departments VALUES (110,'Accoounting',205,1700);
+INSERT INTO departments VALUES (190,'Contracting',NULL,1700)
+
+
+INSERT INTO locations VALUES (1400,'2014 Jabberwocky Rd','26192','Southlake','Texas','US');
+INSERT INTO locations VALUES (1500,'2011 Interiors Bivd','99236','South San Francisco','California','US');
+INSERT INTO locations VALUES (1700,'2004 Charade Rd','98199','Seattle','Washington','US');
+INSERT INTO locations VALUES (1800,'460 Bloor St. W.','ON M5s 1X8','Toronto','Ontario','CA');
+INSERT INTO locations VALUES (2500,'Magdalen Center-The Oxford Sc. Park','OX9 9ZB','OXford','Oxford','UK')
+
+
+     
+     
