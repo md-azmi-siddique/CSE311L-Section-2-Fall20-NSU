@@ -1,0 +1,69 @@
+$sql = "CREATE TABLE Departments(\n"
+
+    . "    DEPARTMENT_ID int(4) NOT NULL PRIMARY KEY,\n"
+
+    . "    DEPARTMENT_NAME VARCHAR(30) NOT NULL,\n"
+
+    . "    MANAGER_ID int(6),\n"
+
+    . "    LOCATION_ID int(4))";
+
+$sql = "INSERT INTO departments VALUES (10,\'Administration\',200,1700)";
+$sql = "INSERT INTO departments VALUES (20,\'Marketing\',201,1800)";
+$sql = "INSERT INTO departments VALUES (50,\'Shipping\',124,1500)";
+$sql = "INSERT INTO departments VALUES (60,\'IT\',103,1400)";
+$sql = "INSERT INTO departments VALUES (80,\'Sales\',149,2500)";
+$sql = "INSERT INTO departments VALUES (90,\'Executive\',100,1700)";
+$sql = "INSERT INTO departments VALUES (110,\'Accoounting\',205,1700)";
+$sql = "INSERT INTO departments VALUES (190,\'Contracting\',NULL,1700)";
+
+
+$sql = "CREATE TABLE Locations(\n"
+
+    . "    Location_id int(4) NOT NULL PRIMARY KEY,\n"
+
+    . "    Street_Address VARCHAR(40),\n"
+
+    . "    Postal_Code VARCHAR(12),\n"
+
+    . "    City VARCHAR(30)NOT NULL,\n"
+
+    . "    State_Province VARCHAR(25),\n"
+
+    . "    Country_ID VARCHAR(2))";
+
+$sql = "INSERT INTO locations VALUES (1400,\'2014 Jabberwocky Rd\',\'26192\',\'Southlake\',\'Texas\',\'US\')";
+$sql = "INSERT INTO locations VALUES (1500,\'2011 Interiors Bivd\',\'99236\',\'South San Francisco\',\'California\',\'US\')";
+$sql = "INSERT INTO locations VALUES (1700,\'2004 Charade Rd\',\'98199\',\'Seattle\',\'Washington\',\'US\')";
+$sql = "INSERT INTO locations VALUES (1800,\'460 Bloor St. W.\',\'ON M5s 1X8\',\'Toronto\',\'Ontario\',\'CA\')";
+$sql = "INSERT INTO locations VALUES (2500,\'Magdalen Center-The Oxford Sc. Park\',\'OX9 9ZB\',\'OXford\',\'Oxford\',\'UK\')";
+
+
+
+$sql = "CREATE TABLE Employees(\n"
+
+    . "     Employee_Id int(6)NOT NULL PRIMARY KEY,\n"
+
+    . "     First_Name VARCHAR(20),\n"
+
+    . "     Last_Name VARCHAR(25) NOT NULL,\n"
+
+    . "     Email VARCHAR(25) NOT NULL,\n"
+
+    . "     Phone_Number VARCHAR(15),\n"
+
+    . "     Hire_Date date NOT NULL,\n"
+
+    . "     Job_Id VARCHAR(10)NOT NULL,\n"
+
+    . "     Salary int(8),\n"
+
+    . "     Commission_pct int(2),\n"
+
+    . "     Manager_Id int(6),\n"
+
+    . "     Department_Id int(4))";
+
+
+
+
